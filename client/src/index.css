@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+html {
+  font-family: 'Montserrat';
+}
+:root {
+  --background: rgba(24, 64, 174, 1);
+  --boxes: rgba(211, 232, 253, 1);
+  --bright-blue: rgba(24, 111, 230, 1);
+  --dark: rgba(31, 32, 112, 1);
+  --variable-collection-grey: rgba(203, 203, 203, 1);
+  --variable-collection-white: rgba(255, 255, 255, 1);
+}
+
+body{
+  background: rgba(219,234,254);
+}
+

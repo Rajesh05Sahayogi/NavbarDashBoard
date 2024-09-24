@@ -1,0 +1,68 @@
+.cta-background {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 0;
+    width: 100%;
+    height: auto;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://cdn.builder.io/api/v1/image/assets/TEMP/31ab60eaf8c1d36276dc9f5c290e7f08695635e7c234cdecd32c3ca7af4f389e');
+    background-size: cover;
+    background-position: center;
+    z-index: 1; /* Set z-index lower than content */
+    filter: blur(3px);
+  }
+ 
+  
+  
+  .content-container {
+    width: 100%;
+    max-width: 1194px;
+    margin-top: 0;
+    padding: 20px;
+    z-index: 20; /* Set z-index higher than background */
+  }
+  
+  .cta-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #1D4ED8;
+    border-radius: 8px;
+    text-align: center;
+  }
+  
+  .content-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    object-fit: contain;
+  }
+  
+  @media (max-width: 768px) {
+    .content-container {
+      flex-direction: column;
+    }
+    
+    .cta-button {
+      margin-top: 20px;
+      width: 100%;
+      text-align: center;
+    }
+  
+    .content-image {
+      margin-top: 20px;
+    }
+  }
+  
